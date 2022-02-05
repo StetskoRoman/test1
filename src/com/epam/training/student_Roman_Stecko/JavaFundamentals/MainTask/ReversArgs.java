@@ -9,7 +9,7 @@ public class ReversArgs {
         Scanner arguments = new Scanner(System.in);
         StringBuilder re = new StringBuilder(arguments.nextLine());
         re.reverse();
-        System.out.println(re.toString());
+        System.out.println(re);
     }
 }
 

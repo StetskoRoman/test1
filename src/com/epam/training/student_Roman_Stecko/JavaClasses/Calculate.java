@@ -24,10 +24,10 @@ public class Calculate {
             ab.printInfo();
 
         System.out.println("\nList of abiturients with unsatisfactory estimations");
-        int neud = 4;
+        int neudEstimate = 4;
         for (Abiturients ab : arrayAbiturients) {
             for (int num : ab.getEstimation()) {
-                if (num < neud) {
+                if (num < neudEstimate) {
                     ab.printInfo();
                 }
             }
@@ -42,12 +42,11 @@ public class Calculate {
         }
 
         System.out.println("\nList of abiturients whose grades are above than average ");
-        Abiturients maxAb;
         for (int i = 0; i < arrayAbiturients.size() - 1; i++) {
             int tempi = i + 1;
             if (arrayAbiturients.get(i).avg(arrayAbiturients.get(i).getEstimation()) < arrayAbiturients
                     .get(tempi).avg(arrayAbiturients.get(tempi).getEstimation())) {
-                maxAb = arrayAbiturients.get(tempi);
+                Abiturients maxAb = arrayAbiturients.get(tempi);
                 maxAb.printInfo();
 
             }
