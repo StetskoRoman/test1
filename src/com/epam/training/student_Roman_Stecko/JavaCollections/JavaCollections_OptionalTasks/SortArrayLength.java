@@ -20,16 +20,6 @@ public class SortArrayLength {
                 System.out.println(poemLinesCompare);
             }
 
-//            listPoem.sort(new Comparator<String>() {
-//                @Override
-//                public int compare(String o1, String o2) {
-//                    return o1.length() - o2.length();
-//                }
-//            });
-//            System.out.println("\n");
-//            for (String poemLinesCompare : listPoem) {
-//                System.out.println(poemLinesCompare);
-//            }
         }
         catch (Exception e){
                 System.out.println("Exception, can`t continue.");

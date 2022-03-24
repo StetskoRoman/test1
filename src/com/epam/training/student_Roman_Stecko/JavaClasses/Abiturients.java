@@ -10,7 +10,6 @@ public class Abiturients {
     private String phoneNumber;
     private int[] estimation;
 
-//getters setters
     public long getId() {
         return id;
     }
